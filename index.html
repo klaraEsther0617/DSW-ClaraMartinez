@@ -1,35 +1,165 @@
-<!DOCTYPE html>
-<html lang="en">
+DOCTYPE <html>
+
+</html> lang- "en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=h1, initial-scale=1.0">
-    <title>Document</title>
-
-    <style>
-        * {
-            text-align: center;
-            background-color:rgb(188, 225, 236);
-            color: rgb(51, 37, 8);             
-        }
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <title> FASE2</title>
+        
     </style>
 </head>
 
-<body>
-    <h1> Bienvenido a mi sitios web</h1>
-    <h2> Proyecto de sitio Web año - periodo</h2>
-    <hr>
-    <h3> Nombre: Clara Esther Martinez</h3>
-    <h3> Programa: Ingenieria de Sistemas</h3>
-    <h3> Fecha de creacion: Febrero 15/2023</h3>
-    <hr>
-    <p>Mis datos de contacto son: </br>
-        email: Klaramartineza@hotmail.com </br>
-        numero telefonico: 3103144117 </br>
-        skype: Klaramartinez </br>
+<Body>
+    <header>
+        <h1>FLEX BOX</h1>
 
-    <p>
-</body>
+    </header>
+
+    <ul>
+        <li> <a href="#Inicio"> Inicio </a></li>
+        <li> <a href="#Tema Seleccionado"> Tema Seleccionado </a></li>
+        <li> <a href="#Mockup"> Mockup </a></li>
+        <li> <a href="#Acerca de..."> Acerca de...</a></li>
+    </ul>     
+
+
+    
+
+        <style>
+            * {
+                text-align: derecho;
+                background-color: rgb(238, 225, 166);
+                color: rgb(13, 32, 4);
+                fou
+                
+            }
+        </style>
+        <a name="Inicio"></a>
+        <section>
+            <h2>Algunos conceptos basicos de Text Box</h2>
+            <p>
+                Daremos inicio a los conceptos relacionados con FLEX BOX sus caracteristicas y funcionalidades este
+                metodo nos ayuda a distribuir el espacio entre los items de la interfaz.
+            </p>
+
+            <img src="img/IMAGEN3.jpg" alt="como rganizar los espacios en nuestro sitio Web">
+        </section>
+        <hr>
+        <a name="Tema Seleccionado"></a>
+        <section>
+            <p>
+            <h3> FUNCIONALIDADES Y CARACTERISTICAS DE FLEX BOX</h3>
+
+            <H2>Líneas de inicio y de fin</H2>
+
+            Otra área vital de entendimiento es cómo flexbox no hace suposiciones sobre la manera de escribir del
+            documento. En el pasado, CSS estaba muy inclinado hacia el modo de escritura horizontal y de izquierda a
+            derecha. Los métodos modernos de layout acogen la totalidad de modos de escritura así que no es necesario
+            asumir que una línea de texto empezará arriba del documento y correrá de izquierda a derecha, con nuevas
+            líneas dispuestas una abajo de la otra.
+
+            Puede leer más acerca de la relación que hay entre flexbox y la especificación de los Modos de Escritura en
+            un artículo posterior, sin embargo la siguiente descripción debería ayudar para explicar porqué no se habla
+            de izquierda y derecha ni de arriba o abajo a la hora de describir la dirección en la que fluyen los ítems
+            flex.
+
+
+            <H2>El contenedor flex</H2>
+
+            Un área del documento que contiene un flexbox es llamada contendedor flex. Para crear un contenedor flex,
+            establecemos la propiedad del área del contenedor display como flex o inline-flex. Tan pronto como hacemos
+            esto, los hijos directos de este contenedor se vuelven ítems flex. Como con todas las propiedades de CSS, se
+            definen algunos valores iniciales, así que cuando creemos un contenedor flex todos los ítems flex contenidos
+            se comportarán de la siguiente manera.
+
+            Los ítems se despliegan sobre una fila (la propiedad flex-direction por defecto es row).
+            Los ítems empiezan desde el margen inicial sobre el eje principal.
+            Los ítems no se ajustan en la dimensión principal, pero se pueden contraer.
+            Los ítems se ajustarán para llenar el tamaño del eje cruzado.
+            La propiedad flex-basis es definida como auto.
+            La propiedad flex-wrap es definida como nowrap.
+            El resultado es que todos los ítems se alinearán en una solo fila, usando el tamaño del contenedor como su
+            tamaño en el eje principal. Si hay más ítems de los que caben en el contenedor, estos no pasarán más abajo
+            si no que sobrepasarán el margen. Si hay ítems más altos que otros, todos los ítems serán ajustados en el
+            eje cruzado para alcanzar al mayor.
+
+            <h2> flex Multi-línea con flex-wrap</h2>
+
+            Si bien flexbox es un modelo unidimensional, es posible lograr que nuestros ítems flex sean repartidos en
+            varías líneas. Haciendo esto, se deberá considerar cada línea como un nuevo contenedor flex. Cualquier
+            distribución del espacio solo sucederá dentro de esa línea, sin referenciar las líneas colaterales.
+
+            Para lograr repartirse en varias líneas añada la propiedad flex-wrap con el valor wrap. Cuando los ítems
+            sean demasiados para desplegarlos en una línea, serán repartidos en la línea siguiente. El ejemplo en vivo
+            de abajo contiene ítems que se les ha asignando un ancho, donde el ancho total de los ítems excede al del
+            contenedor flex. Cuando flex-wrap se coloca como wrap, los ítems se repartirán. Al colocarlo como nowrap, el
+            cual es el valor inicial, estos se contraerán para calzar con el contenedor ya que usan los valores
+            iniciales de flexbox que permiten que los ítems se contraigan. Al usar nowrap los ítems podrían salirse del
+            margen si estos no pudieran contraerse, o no contraerse lo suficiente para ser calzados.
+
+            <h2>La propiedad flex-basis</h2>
+
+            Con flex-basis se define el tamaño de un ítem en términos del espacio que deja como espacio disponible. El
+            valor inicial de esta propiedad es auto — en este caso el navegador revisa si los ítems definen un tamaño.
+            En el ejemplo de arriba, todos los ítems tienen un ancho de 100 pixeles así que este es usado como
+            flex-basis.
+
+            Si los ítems no tiene un tamaño entonces el tamaño de su contenido es usado como flex-basis. Y por eso,
+            apenas declarado display: flex en el padre a fin de crear ítems flex, todos estos ítems se ubicaron en una
+            sola fila y tomaron solo el espacio necesario para desplegar su contenido.
+
+            <h2>La propiedad flex-grow</h2>
+            Con la propiedad flex-grow definida como un entero positivo, los ítems flex pueden crecer en el eje
+            principal a partir de flex-basis. Esto hará que el ítem se ajuste y tome todo el espacio disponible del eje,
+            o una proporción del espacio disponible si otro ítem también puede crecer.
+
+            Si le damos a todos los ítems del ejemplo anterior un valor flex-grow de 1 entonces el espacio disponible en
+            el contenedor flex será compartido igualitariamente entre estos ítems y se ajustarán para llenar el
+            contenedor sobre el eje principal.
+
+            Podemos usar flex-grow apropiadamente para distribuir el espacio en proporciones. Si otorgamos al primer
+            ítem un valor flex-grow de 2 y a los otros un valor de 1, entonces 2 partes serán dadas al primer ítem
+            (100px de 200px en el caso del ejemplo de arriba) y 1 parte para cada uno de los restantes (cada uno con
+            50px de los 200px en total).
+
+            </p>
+            <a name="Mockup"></a>
+
+            <section>
+                <hr>
+            </section>
+
+            <h2> Mockup de la pagina </h2>
+
+            <img src="img/Imagen1.png" alt="">
+            <hr>
+            <a name="Acerca de..."></a>
+            <section>
+
+                <h3>Acerca de...</h3>
+
+                <h2> Bienvenido a mi sitios WEB</h1>
+                    <h2> Proyecto de sitio Web año 2023</h2>
+                    <h3> Nombre: Clara Esther Martinez</h3>
+                    <p>Mis datos de contacto son: </br>
+                        email: Klaramartineza@hotmail.com </br>
+                        numero telefonico: 3103144117 </br>
+                        skype: Klaramartinez </br>
+                        <hr>
+
+            </section>
+            <footer>
+
+                <p>Esta pagina fue desarrollada por Klara Martinez</p>
+            </footer>
+
+
+        </section>
+    </nav>
+
+
+</Body>
 
 </html>
