@@ -9,28 +9,32 @@
 
 header {
     grid-area: A;
-    background-color: #ffef94;
+    background-color: #4b947c;
 }
 
 nav {
     grid-area: B;
-    background-color: #7ff1af;
+    background-color: #d1dfd7;
 }
 
 aside {
     grid-area: C;
-    background-color: #a7ecbc;
+    background-color: #b7daebe8;
 }
 
 main {
     grid-area: D;
-    background-color: #87ced3;
+    background-color: #e7daa0d2;
 }
 
 footer {
     grid-area: E;
-    background-color: #d0e7f0;
+    background-color: #e7b81d;
 }
+.centrado{
+    text-align: center;
+}
+
 .centrado{
     text-align: center;
 }
@@ -45,9 +49,9 @@ footer {
 }
 
 .menu-horizontal a{
-    background-color: rgb(243, 236, 198);
+    background-color: rgb(120, 202, 179);
     text-decoration: none;
-    color: rgb(173, 143, 8);
+    color: rgba(17, 50, 197, 0.671);
     padding: 10px 40px;
     margin: 3px;
 
@@ -62,5 +66,25 @@ footer {
     padding: 10px 40px;
     margin: 10px;
     display: block;
+}
+
+
+@media (max-width: 500px) {
+
+    .contenedor {
+        display: grid;
+        grid-template-areas:
+            'A A A A'
+            'C B B B'
+            'C D D D'
+            '. c c .'
+            'E E E E';
+    }
+
+    footer{
+        background-color: chocolate;
+
+    }
+    
 }
  
