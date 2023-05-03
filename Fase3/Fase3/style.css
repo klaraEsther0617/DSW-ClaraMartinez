@@ -1,4 +1,4 @@
-.contenedor {
+                                                                                                                                                                      .contenedor {
     display: grid;
     grid-template-areas:
         'A A A A'
@@ -9,23 +9,33 @@
 
 header {
     grid-area: A;
-    background-color: #4b947c;
+    background-color: #faf878;
+    display: flex;
+    justify-content: center;
 }
 
 nav {
     grid-area: B;
-    background-color: #d1dfd7;
+    background-color: #a9ccb8;
+    
+    
 }
 
 aside {
     grid-area: C;
-    background-color: #b7daebe8;
+    background-color: #cbffffe8;
+    
+    
 }
 
 main {
     grid-area: D;
     background-color: #e7daa0d2;
+    
+    
+    
 }
+    
 
 footer {
     grid-area: E;
@@ -39,6 +49,7 @@ footer {
     text-align: center;
 }
 
+
 /*Menu*/
 
 .menu-horizontal{
@@ -49,9 +60,9 @@ footer {
 }
 
 .menu-horizontal a{
-    background-color: rgb(120, 202, 179);
+    background-color: rgb(248, 233, 146);
     text-decoration: none;
-    color: rgba(17, 50, 197, 0.671);
+    color: rgba(90, 86, 102, 0.842);
     padding: 10px 40px;
     margin: 3px;
 
@@ -69,7 +80,8 @@ footer {
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 500px)
+{
 
     .contenedor {
         display: grid;
@@ -86,5 +98,17 @@ footer {
 
     }
     
+    img{
+        width: 150;
+        height: 150;
+    }
+    .circular img{
+        display: block;
+        margin: 0px auto;
+        border-radius: 50%;
+      
+
+    }
+
 }
  
