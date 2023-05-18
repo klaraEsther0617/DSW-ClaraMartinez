@@ -1,0 +1,114 @@
+                                                                                                                                                                      .contenedor {
+    display: grid;
+    grid-template-areas:
+        'A A A A'
+        'C B B B'
+        'C D D D'
+        'E E E E';
+}
+
+header {
+    grid-area: A;
+    background-color: #faf878;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    grid-area: B;
+    background-color: #a9ccb8;
+    
+    
+}
+
+aside {
+    grid-area: C;
+    background-color: #cbffffe8;
+    
+    
+}
+
+main {
+    grid-area: D;
+    background-color: #e7daa0d2;
+    
+    
+    
+}
+    
+
+footer {
+    grid-area: E;
+    background-color: #e7b81d;
+}
+.centrado{
+    text-align: center;
+}
+
+.centrado{
+    text-align: center;
+}
+
+
+/*Menu*/
+
+.menu-horizontal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.menu-horizontal a{
+    background-color: rgb(248, 233, 146);
+    text-decoration: none;
+    color: rgba(90, 86, 102, 0.842);
+    padding: 10px 40px;
+    margin: 3px;
+
+}
+.menu-asaide{
+    list-style: none;    
+}
+.menu-asaide a{
+    background-color: rgb(123, 241, 139);
+    text-decoration: none;
+    color: rgb(16, 90, 133);
+    padding: 10px 40px;
+    margin: 10px;
+    display: block;
+}
+
+
+@media (max-width: 500px)
+{
+
+    .contenedor {
+        display: grid;
+        grid-template-areas:
+            'A A A A'
+            'C B B B'
+            'C D D D'
+            '. c c .'
+            'E E E E';
+    }
+
+    footer{
+        background-color: chocolate;
+
+    }
+    
+    img{
+        width: 150;
+        height: 150;
+    }
+    .circular img{
+        display: block;
+        margin: 0px auto;
+        border-radius: 50%;
+      
+
+    }
+
+}
+ 
